@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+:root {
+  --header-height: 4.5rem;
+
+  /* colors */
+  --background: #ffd41c;
+  --title-red: #ed3d75;
+  --tile-purple: #6e2e87;
+  --title-grey: #8e8e8e;
+ 
+
+  /* fonts */
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+}
+
+
+/* CARDS */
+
+.card i {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 5rem;
+  color: var(--base-color);
+}
+
+.card {
+  background: #fff;
+  width: 16rem;
+  height: 26rem;
+  padding: 1rem 1rem ;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.content_cards{
+  width: 16rem;
+}
+
+.card .title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.title_card {
+  padding: 0;
+  line-height: 3rem;
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: sans-serif;
+  color: var(--title-red);
+
+}
+.card .title_card {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.desc_opt{
+  font-size: .9rem;
+  color: #6e2e87;
+}
+.icons{
+  width: 31px !important;
+  height:31px !important;
+  margin: 3px;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+
+}
+.price{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.price_initial{
+  display: flex;
+  flex-direction: row;
+}
+.desc_price_initial{
+  font-size: .88rem;
+  font-weight: bold;
+  color:#6e2e87;
+}
+.price_final{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.price_final{
+  font-size: 2.75rem;
+  font-weight: bold;
+  color:#6e2e87;
+}
+.price_final_simbols{
+  display: flex;
+  flex-direction: column;
+}
+.por{
+  font-size: .95rem;
+  font-weight: bold;
+  color:#6e2e87;
+  margin-bottom: 0;
+}
+.simbol_price{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:#6e2e87;
+}
+.consulte_condicoes{
+  font-size: .87rem;
+  color:#ed3d75;
+}
+.botao{
+  margin-top: 1.2rem;
+
+}
+.consulte_cobertura{
+  font-size: 1rem;
+
+}
+.consulte_cobertura{
+  font-size: 1.13rem;
+  font-weight: bold;
+  background: #ed3d75;
+  padding: .93rem 1.87rem;
+  color: #ffd41c;
+  white-space: nowrap;
+  border-radius: .5rem;
+}
+.line_card{
+  border-bottom: 1px solid #ed3d75;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* FIM DOS CARDS */
+
+.content{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffd41c;
+}
+
+.title {
+  font: 700 2rem "Nunito, sans-serif";
+  line-height: 3rem;
+  color: #ed3d75;
+  margin-bottom: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.pacotes {
+  margin: 3rem auto;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+
+.pacote-radio {
+  position: absolute;
+  left: -200vw;
+}
+
+
+.pacote-btn {
+  color: #6e2e87;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: sans-serif;
+  opacity: .5;
+  cursor: pointer;
+  position: relative;
+  padding: .9rem 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.pacote-btn:hover {
+  color: #6e2e87;
+  opacity: 1;
+}
+
+.pacotes input {
+  display: none;
+}
+
+.pacote{
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+}
+
+.pacote>label:after {
+  content: "";
+  position: absolute;
+  bottom: -.5rem;
+  left: 0;
+  width: 105%;
+  height: 2px;
+  background: #6e2e87;
+}
+
+.slider {
+  margin: 0 auto 0;
+  width:100vh;
+  height: 35rem;
+  overflow: hidden;
+}
+.content_cards:not(:last-child) {
+  margin-right: 2rem;
+}
+/*
+.carrosel {
+  display: flex;
+  width: 20rem;
+  height: 27rem;
+  margin-right: 1rem;
+}
+*/
+
+.tabs_plans{
+  text-decoration: none;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  border-bottom: .15rem solid #a88ab4;
+  font-size: 1.25rem;
+  font-weight: 100;
+  cursor: pointer;
+  color: #a88ab4;
+}
+.tabs_plans:hover{
+  border-bottom: .15rem solid #6e2e87;
+  color: #6e2e87;
+}
+
+.slides {
+  width: 400%;
+  height: 25rem;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+} 
+
+.slide img {
+  width: 25rem;
+}
+
+.manual-navigation {
+  display: flex;
+  width: 55rem;
+  margin-top: 5rem;
+  justify-content: center;
+  
+}
+
+.manual-btn {
+  border: .13rem solid #ed3d75;
+  padding: .32rem;
+  border-radius: .63rem;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.manual-btn:hover {
+  background-color: #ed3d75;
+}
+
+#radio1:checked ~ .first, #Gradio1:checked ~ .first, #Hradio1:checked ~ .first, #Tradio1:checked ~ .first , #Pradio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first, #Gradio2:checked ~ .first, #Hradio2:checked ~ .first, #Tradio2:checked ~ .first , #Pradio2:checked ~ .first {
+  margin-left: -25%;
+}
+
+@media (max-width : 1150px){
+  .pacote{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-left: 15%;
+    margin-top: 5%;
+    width: 100%;
+    align-items: unset;
+    justify-content: unset;
+  }
+  .pacote{
+    -webkit-overflow-scrolling: touch;
+  }
+  ::-webkit-scrollbar{
+    background: transparent;
+  }
+
+}
+
+@media (max-width : 860px) {
+  
+  .title {
+    font: 700 1rem "Nunito, sans-serif";
+    line-height: 1.5rem;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+
+  }
+
+  .slider {
+    margin: 0 auto 0;
+    width: 100vw;
+    height: 2500px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .slides{
+    display: flex;
+    flex-direction: column;
+  }
+  .content_cards:not(:last-child) {
+    margin-right: 0rem;
+  }
+  .slide{
+    width: 100vw;
+  }
+
+  .manual-navigation {
+    display: none;
+    
+  }
+
+  
+}
+
+
+
+
+

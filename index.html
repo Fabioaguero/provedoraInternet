@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <H1>
+      carrosel
+    </H1>
+  </header>
+
+  <section>
+
+    <!-- Title -->
+    <div class="title">
+      <h1>Planos Vero Internet Fibra</h1>
+    </div>
+    <!-- Fim Title -->
+
+    <!--Pacotes  -->
+    <div class="pacotes">
+
+      <div class="pacote ">
+        <!-- Radios Pacotes -->
+        <!-- <input type="radio" name="radio-btn" class="pacote-radio" id="pacote1">
+        <label for="pacote1" class="pacote-btn">Internet</label>
+        <input type="radio" name="radio-btn" class="pacote-radio" id="pacote2">
+        <label for="pacote2" class="pacote-btn">Internet + Globoplay</label>
+        <input type="radio" name="radio-btn" class="pacote-radio" id="pacote3">
+        <label for="pacote3" class="pacote-btn">Internet + HBO Max</label>
+        <input type="radio" name="radio-btn" class="pacote-radio" id="pacote4">
+        <label for="pacote4" class="pacote-btn">Internet + Premiere</label>
+        <input type="radio" name="radio-btn" class="pacote-radio" id="pacote5">
+        <label for="pacote5" class="pacote-btn">Internet + Telecine</label> -->
+        <!-- Radios Pacotes -->
+
+        <a class="tabs_plans" id="tabI" onclick="cards('I')"
+          style="color:#6e2e87; border-bottom: .15rem solid #6e2e87;">Internet</a>
+        <a class="tabs_plans" id="tabIG" onclick="cards('IG')">Internet + Globoplay</a>
+        <a class="tabs_plans tabIH" id="tabIH" onclick="cards('IH')">Internet + HBO Max</a>
+        <a class="tabs_plans" id="tabIP" onclick="cards('IP')">Internet + Premiere</a>
+        <a class="tabs_plans" id="tabIT" onclick="cards('IT')">Internet + Telecine</a>
+
+      </div>
+
+    </div>
+    <!--Fim Pacotes-->
+
+    <div class="slider" id="internet">
+
+      <div class="slides">
+        <!-- Radios Buttons -->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!-- Fim Radios Buttons -->
+        <!-- Slide Images -->
+        <div class="slide first">
+          <div class="content">
+
+            <!--  CARD 1 -->
+
+            <div id="card01" class="content_cards card1">
+              <div class="card">
+                <h2 class="title_card">380 MEGA*</h2>
+                <p class="desc_opt">Com Wi-Fi e modem grátis</p>
+                <div class="line_card"></div>
+                <p class="desc_opt">Conteúdo digitais incluídos</p>
+                <div style="display:flex; flex-direction:row; align-items: center; justify-content: center;">
+                  <img class="icons" src="./assets/logo_hbo.png">
+                  <img class="icons" src="./assets/vero_crianca.png">
+                  <img class="icons" src="./assets/vero_seguranca.png">
+                  <img class="icons" src="./assets/vero_video.png">
+                </div>
+                <div>
+                  <div class="price">
+                    <div class="price_initial">
+                      <p class="desc_price_initial">de:</p>
+                      <p class="desc_price_initial">R$ 129,00</p>
+                    </div>
+                    <div class="price_final">
+                      <div class="price_final_simbols">
+                        <p class="por">por:</p>
+                        <p class="simbol_price">R$</p>
+                      </div>
+                      <p class="price_final">125,00</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="consulte_condicoes">Consulte condições</p>
+                <div class="botao" onclick="consultarWpp(10)">
+                  <a class="link10" href='' target="_blank">
+                    <p class="consulte_cobertura">Consultar cobertura</p>
+                  </a>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: row; align-items:center; justify-content:center;">
+                <p style="color:#ed3d75 ; font-size: 0.8rem;">
+                  Compartilhe essa oferta
+                </p>
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                  <a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://verointernetfibra.com.br/?utm_source=Product&amp;utm_medium=Facebook&amp;utm_campaign=Recommendation"
+                    alt="Facebook Icon">
+                    <img src="./assets/facebook.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="https://api.whatsapp.com/send?text=Vi essas ofertas da Vero e lembrei de você! https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DWhatsApp%26utm_campaign%3DRecommendation"
+                    class="whatsapp">
+                    <img src="./assets/whatsapp.svg"
+                      style="width: 1.4rem; height:1.4rem; margin-top: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="mailto:?&subject=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!&body=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!%20https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DEmail%26utm_campaign%3DRecommendation">
+                    <img src="./assets/email.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!--  CARD 2 -->
+
+            <div id="card01" class="content_cards card1">
+              <div class="card">
+                <h2 class="title_card">380 MEGA*</h2>
+                <p class="desc_opt">Com Wi-Fi e modem grátis</p>
+                <div class="line_card"></div>
+                <p class="desc_opt">Conteúdo digitais incluídos</p>
+                <div style="display:flex; flex-direction:row; align-items: center; justify-content: center;">
+                  <img class="icons" src="./assets/logo_hbo.png">
+                  <img class="icons" src="./assets/vero_crianca.png">
+                  <img class="icons" src="./assets/vero_seguranca.png">
+                  <img class="icons" src="./assets/vero_video.png">
+                </div>
+                <div>
+                  <div class="price">
+                    <div class="price_initial">
+                      <p class="desc_price_initial">de:</p>
+                      <p class="desc_price_initial">R$ 129,00</p>
+                    </div>
+                    <div class="price_final">
+                      <div class="price_final_simbols">
+                        <p class="por">por:</p>
+                        <p class="simbol_price">R$</p>
+                      </div>
+                      <p class="price_final">125,00</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="consulte_condicoes">Consulte condições</p>
+                <div class="botao" onclick="consultarWpp(10)">
+                  <a class="link10" href='' target="_blank">
+                    <p class="consulte_cobertura">Consultar cobertura</p>
+                  </a>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: row; align-items:center; justify-content:center;">
+                <p style="color:#ed3d75 ; font-size: 0.8rem;">
+                  Compartilhe essa oferta
+                </p>
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                  <a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://verointernetfibra.com.br/?utm_source=Product&amp;utm_medium=Facebook&amp;utm_campaign=Recommendation"
+                    alt="Facebook Icon">
+                    <img src="./assets/facebook.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="https://api.whatsapp.com/send?text=Vi essas ofertas da Vero e lembrei de você! https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DWhatsApp%26utm_campaign%3DRecommendation"
+                    class="whatsapp">
+                    <img src="./assets/whatsapp.svg"
+                      style="width: 1.4rem; height:1.4rem; margin-top: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="mailto:?&subject=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!&body=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!%20https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DEmail%26utm_campaign%3DRecommendation">
+                    <img src="./assets/email.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+            <!--  CARD 3 -->
+
+            <div id="card01" class="content_cards card1">
+              <div class="card">
+                <h2 class="title_card">380 MEGA*</h2>
+                <p class="desc_opt">Com Wi-Fi e modem grátis</p>
+                <div class="line_card"></div>
+                <p class="desc_opt">Conteúdo digitais incluídos</p>
+                <div style="display:flex; flex-direction:row; align-items: center; justify-content: center;">
+                  <img class="icons" src="./assets/logo_hbo.png">
+                  <img class="icons" src="./assets/vero_crianca.png">
+                  <img class="icons" src="./assets/vero_seguranca.png">
+                  <img class="icons" src="./assets/vero_video.png">
+                </div>
+                <div>
+                  <div class="price">
+                    <div class="price_initial">
+                      <p class="desc_price_initial">de:</p>
+                      <p class="desc_price_initial">R$ 129,00</p>
+                    </div>
+                    <div class="price_final">
+                      <div class="price_final_simbols">
+                        <p class="por">por:</p>
+                        <p class="simbol_price">R$</p>
+                      </div>
+                      <p class="price_final">125,00</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="consulte_condicoes">Consulte condições</p>
+                <div class="botao" onclick="consultarWpp(10)">
+                  <a class="link10" href='' target="_blank">
+                    <p class="consulte_cobertura">Consultar cobertura</p>
+                  </a>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: row; align-items:center; justify-content:center;">
+                <p style="color:#ed3d75 ; font-size: 0.8rem;">
+                  Compartilhe essa oferta
+                </p>
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                  <a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://verointernetfibra.com.br/?utm_source=Product&amp;utm_medium=Facebook&amp;utm_campaign=Recommendation"
+                    alt="Facebook Icon">
+                    <img src="./assets/facebook.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="https://api.whatsapp.com/send?text=Vi essas ofertas da Vero e lembrei de você! https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DWhatsApp%26utm_campaign%3DRecommendation"
+                    class="whatsapp">
+                    <img src="./assets/whatsapp.svg"
+                      style="width: 1.4rem; height:1.4rem; margin-top: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="mailto:?&subject=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!&body=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!%20https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DEmail%26utm_campaign%3DRecommendation">
+                    <img src="./assets/email.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="slide">
+
+          <div class="content">
+
+            <!--  CARD 1 -->
+
+            <div id="card01" class="content_cards card1">
+              <div class="card">
+                <h2 class="title_card">380 MEGA*</h2>
+                <p class="desc_opt">Com Wi-Fi e modem grátis</p>
+                <div class="line_card"></div>
+                <p class="desc_opt">Conteúdo digitais incluídos</p>
+                <div style="display:flex; flex-direction:row; align-items: center; justify-content: center;">
+                  <img class="icons" src="./assets/logo_hbo.png">
+                  <img class="icons" src="./assets/vero_crianca.png">
+                  <img class="icons" src="./assets/vero_seguranca.png">
+                  <img class="icons" src="./assets/vero_video.png">
+                </div>
+                <div>
+                  <div class="price">
+                    <div class="price_initial">
+                      <p class="desc_price_initial">de:</p>
+                      <p class="desc_price_initial">R$ 129,00</p>
+                    </div>
+                    <div class="price_final">
+                      <div class="price_final_simbols">
+                        <p class="por">por:</p>
+                        <p class="simbol_price">R$</p>
+                      </div>
+                      <p class="price_final">125,00</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="consulte_condicoes">Consulte condições</p>
+                <div class="botao" onclick="consultarWpp(10)">
+                  <a class="link10" href='' target="_blank">
+                    <p class="consulte_cobertura">Consultar cobertura</p>
+                  </a>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: row; align-items:center; justify-content:center;">
+                <p style="color:#ed3d75 ; font-size: 0.8rem;">
+                  Compartilhe essa oferta
+                </p>
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                  <a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://verointernetfibra.com.br/?utm_source=Product&amp;utm_medium=Facebook&amp;utm_campaign=Recommendation"
+                    alt="Facebook Icon">
+                    <img src="./assets/facebook.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="https://api.whatsapp.com/send?text=Vi essas ofertas da Vero e lembrei de você! https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DWhatsApp%26utm_campaign%3DRecommendation"
+                    class="whatsapp">
+                    <img src="./assets/whatsapp.svg"
+                      style="width: 1.4rem; height:1.4rem; margin-top: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="mailto:?&subject=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!&body=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!%20https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DEmail%26utm_campaign%3DRecommendation">
+                    <img src="./assets/email.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!--  CARD 2 -->
+
+            <div id="card01" class="content_cards card1">
+              <div class="card">
+                <h2 class="title_card">380 MEGA*</h2>
+                <p class="desc_opt">Com Wi-Fi e modem grátis</p>
+                <div class="line_card"></div>
+                <p class="desc_opt">Conteúdo digitais incluídos</p>
+                <div style="display:flex; flex-direction:row; align-items: center; justify-content: center;">
+                  <img class="icons" src="./assets/logo_hbo.png">
+                  <img class="icons" src="./assets/vero_crianca.png">
+                  <img class="icons" src="./assets/vero_seguranca.png">
+                  <img class="icons" src="./assets/vero_video.png">
+                </div>
+                <div>
+                  <div class="price">
+                    <div class="price_initial">
+                      <p class="desc_price_initial">de:</p>
+                      <p class="desc_price_initial">R$ 129,00</p>
+                    </div>
+                    <div class="price_final">
+                      <div class="price_final_simbols">
+                        <p class="por">por:</p>
+                        <p class="simbol_price">R$</p>
+                      </div>
+                      <p class="price_final">125,00</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="consulte_condicoes">Consulte condições</p>
+                <div class="botao" onclick="consultarWpp(10)">
+                  <a class="link10" href='' target="_blank">
+                    <p class="consulte_cobertura">Consultar cobertura</p>
+                  </a>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: row; align-items:center; justify-content:center;">
+                <p style="color:#ed3d75 ; font-size: 0.8rem;">
+                  Compartilhe essa oferta
+                </p>
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                  <a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://verointernetfibra.com.br/?utm_source=Product&amp;utm_medium=Facebook&amp;utm_campaign=Recommendation"
+                    alt="Facebook Icon">
+                    <img src="./assets/facebook.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="https://api.whatsapp.com/send?text=Vi essas ofertas da Vero e lembrei de você! https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DWhatsApp%26utm_campaign%3DRecommendation"
+                    class="whatsapp">
+                    <img src="./assets/whatsapp.svg"
+                      style="width: 1.4rem; height:1.4rem; margin-top: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="mailto:?&subject=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!&body=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!%20https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DEmail%26utm_campaign%3DRecommendation">
+                    <img src="./assets/email.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- Fim Slide Images -->
+      <!-- Navigation -->
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+      </div>
+      <!-- Fim Navigation -->
+
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+
+      </div>
+
+    </div>
+
+    <!-- SLIDER INTERT + GLOBOPLAY -->
+
+    <div class="slider" id="internetgloboplay">
+
+      <div class="slides">
+        <!-- Radios Buttons -->
+        <input type="radio" name="radio-btn" id="Gradio1">
+        <input type="radio" name="radio-btn" id="Gradio2">
+        <input type="radio" name="radio-btn" id="Gradio3">
+        <input type="radio" name="radio-btn" id="Gradio4">
+        <!-- Fim Radios Buttons -->
+        <!-- Slide Images -->
+        <div class="slide first">
+          <div class="content">
+
+            <!--  CARD 1 -->
+
+            <div id="card01" class="content_cards card1">
+              <div class="card">
+                <h2 class="title_card">380 MEGA*</h2>
+                <p class="desc_opt">Com Wi-Fi e modem grátis</p>
+                <div class="line_card"></div>
+                <p class="desc_opt">Conteúdo digitais incluídos</p>
+                <div style="display:flex; flex-direction:row; align-items: center; justify-content: center;">
+                  <img class="icons" src="./assets/logo_hbo.png">
+                  <img class="icons" src="./assets/vero_crianca.png">
+                  <img class="icons" src="./assets/vero_seguranca.png">
+                  <img class="icons" src="./assets/vero_video.png">
+                </div>
+                <div>
+                  <div class="price">
+                    <div class="price_initial">
+                      <p class="desc_price_initial">de:</p>
+                      <p class="desc_price_initial">R$ 129,00</p>
+                    </div>
+                    <div class="price_final">
+                      <div class="price_final_simbols">
+                        <p class="por">por:</p>
+                        <p class="simbol_price">R$</p>
+                      </div>
+                      <p class="price_final">125,00</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="consulte_condicoes">Consulte condições</p>
+                <div class="botao" onclick="consultarWpp(10)">
+                  <a class="link10" href='' target="_blank">
+                    <p class="consulte_cobertura">Consultar cobertura</p>
+                  </a>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: row; align-items:center; justify-content:center;">
+                <p style="color:#ed3d75 ; font-size: 0.8rem;">
+                  Compartilhe essa oferta
+                </p>
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                  <a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://verointernetfibra.com.br/?utm_source=Product&amp;utm_medium=Facebook&amp;utm_campaign=Recommendation"
+                    alt="Facebook Icon">
+                    <img src="./assets/facebook.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="https://api.whatsapp.com/send?text=Vi essas ofertas da Vero e lembrei de você! https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DWhatsApp%26utm_campaign%3DRecommendation"
+                    class="whatsapp">
+                    <img src="./assets/whatsapp.svg"
+                      style="width: 1.4rem; height:1.4rem; margin-top: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="mailto:?&subject=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!&body=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!%20https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DEmail%26utm_campaign%3DRecommendation">
+                    <img src="./assets/email.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!--  CARD 2 -->
+
+            <div id="card01" class="content_cards card1">
+              <div class="card">
+                <h2 class="title_card">380 MEGA*</h2>
+                <p class="desc_opt">Com Wi-Fi e modem grátis</p>
+                <div class="line_card"></div>
+                <p class="desc_opt">Conteúdo digitais incluídos</p>
+                <div style="display:flex; flex-direction:row; align-items: center; justify-content: center;">
+                  <img class="icons" src="./assets/logo_hbo.png">
+                  <img class="icons" src="./assets/vero_crianca.png">
+                  <img class="icons" src="./assets/vero_seguranca.png">
+                  <img class="icons" src="./assets/vero_video.png">
+                </div>
+                <div>
+                  <div class="price">
+                    <div class="price_initial">
+                      <p class="desc_price_initial">de:</p>
+                      <p class="desc_price_initial">R$ 129,00</p>
+                    </div>
+                    <div class="price_final">
+                      <div class="price_final_simbols">
+                        <p class="por">por:</p>
+                        <p class="simbol_price">R$</p>
+                      </div>
+                      <p class="price_final">125,00</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="consulte_condicoes">Consulte condições</p>
+                <div class="botao" onclick="consultarWpp(10)">
+                  <a class="link10" href='' target="_blank">
+                    <p class="consulte_cobertura">Consultar cobertura</p>
+                  </a>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: row; align-items:center; justify-content:center;">
+                <p style="color:#ed3d75 ; font-size: 0.8rem;">
+                  Compartilhe essa oferta
+                </p>
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                  <a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://verointernetfibra.com.br/?utm_source=Product&amp;utm_medium=Facebook&amp;utm_campaign=Recommendation"
+                    alt="Facebook Icon">
+                    <img src="./assets/facebook.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="https://api.whatsapp.com/send?text=Vi essas ofertas da Vero e lembrei de você! https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DWhatsApp%26utm_campaign%3DRecommendation"
+                    class="whatsapp">
+                    <img src="./assets/whatsapp.svg"
+                      style="width: 1.4rem; height:1.4rem; margin-top: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="mailto:?&subject=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!&body=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!%20https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DEmail%26utm_campaign%3DRecommendation">
+                    <img src="./assets/email.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+            <!--  CARD 3 -->
+
+            <div id="card01" class="content_cards card1">
+              <div class="card">
+                <h2 class="title_card">380 MEGA*</h2>
+                <p class="desc_opt">Com Wi-Fi e modem grátis</p>
+                <div class="line_card"></div>
+                <p class="desc_opt">Conteúdo digitais incluídos</p>
+                <div style="display:flex; flex-direction:row; align-items: center; justify-content: center;">
+                  <img class="icons" src="./assets/logo_hbo.png">
+                  <img class="icons" src="./assets/vero_crianca.png">
+                  <img class="icons" src="./assets/vero_seguranca.png">
+                  <img class="icons" src="./assets/vero_video.png">
+                </div>
+                <div>
+                  <div class="price">
+                    <div class="price_initial">
+                      <p class="desc_price_initial">de:</p>
+                      <p class="desc_price_initial">R$ 129,00</p>
+                    </div>
+                    <div class="price_final">
+                      <div class="price_final_simbols">
+                        <p class="por">por:</p>
+                        <p class="simbol_price">R$</p>
+                      </div>
+                      <p class="price_final">125,00</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="consulte_condicoes">Consulte condições</p>
+                <div class="botao" onclick="consultarWpp(10)">
+                  <a class="link10" href='' target="_blank">
+                    <p class="consulte_cobertura">Consultar cobertura</p>
+                  </a>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: row; align-items:center; justify-content:center;">
+                <p style="color:#ed3d75 ; font-size: 0.8rem;">
+                  Compartilhe essa oferta
+                </p>
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                  <a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://verointernetfibra.com.br/?utm_source=Product&amp;utm_medium=Facebook&amp;utm_campaign=Recommendation"
+                    alt="Facebook Icon">
+                    <img src="./assets/facebook.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="https://api.whatsapp.com/send?text=Vi essas ofertas da Vero e lembrei de você! https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DWhatsApp%26utm_campaign%3DRecommendation"
+                    class="whatsapp">
+                    <img src="./assets/whatsapp.svg"
+                      style="width: 1.4rem; height:1.4rem; margin-top: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="mailto:?&subject=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!&body=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!%20https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DEmail%26utm_campaign%3DRecommendation">
+                    <img src="./assets/email.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="slide">
+
+          <div class="content">
+
+            <!--  CARD 1 -->
+
+            <div id="card01" class="content_cards card1">
+              <div class="card">
+                <h2 class="title_card">380 MEGA*</h2>
+                <p class="desc_opt">Com Wi-Fi e modem grátis</p>
+                <div class="line_card"></div>
+                <p class="desc_opt">Conteúdo digitais incluídos</p>
+                <div style="display:flex; flex-direction:row; align-items: center; justify-content: center;">
+                  <img class="icons" src="./assets/logo_hbo.png">
+                  <img class="icons" src="./assets/vero_crianca.png">
+                  <img class="icons" src="./assets/vero_seguranca.png">
+                  <img class="icons" src="./assets/vero_video.png">
+                </div>
+                <div>
+                  <div class="price">
+                    <div class="price_initial">
+                      <p class="desc_price_initial">de:</p>
+                      <p class="desc_price_initial">R$ 129,00</p>
+                    </div>
+                    <div class="price_final">
+                      <div class="price_final_simbols">
+                        <p class="por">por:</p>
+                        <p class="simbol_price">R$</p>
+                      </div>
+                      <p class="price_final">125,00</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="consulte_condicoes">Consulte condições</p>
+                <div class="botao" onclick="consultarWpp(10)">
+                  <a class="link10" href='' target="_blank">
+                    <p class="consulte_cobertura">Consultar cobertura</p>
+                  </a>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: row; align-items:center; justify-content:center;">
+                <p style="color:#ed3d75 ; font-size: 0.8rem;">
+                  Compartilhe essa oferta
+                </p>
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                  <a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://verointernetfibra.com.br/?utm_source=Product&amp;utm_medium=Facebook&amp;utm_campaign=Recommendation"
+                    alt="Facebook Icon">
+                    <img src="./assets/facebook.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="https://api.whatsapp.com/send?text=Vi essas ofertas da Vero e lembrei de você! https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DWhatsApp%26utm_campaign%3DRecommendation"
+                    class="whatsapp">
+                    <img src="./assets/whatsapp.svg"
+                      style="width: 1.4rem; height:1.4rem; margin-top: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="mailto:?&subject=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!&body=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!%20https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DEmail%26utm_campaign%3DRecommendation">
+                    <img src="./assets/email.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- Fim Slide Images -->
+      <!-- Navigation -->
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+      </div>
+      <!-- Fim Navigation -->
+
+      <div class="manual-navigation">
+        <label for="Gradio1" class="manual-btn"></label>
+        <label for="Gradio2" class="manual-btn"></label>
+
+      </div>
+
+    </div>
+
+
+    <!-- SLIDER INTERT + HBOMAX -->
+
+    <div class="slider" id="internethbo">
+
+      <div class="slides">
+        <!-- Radios Buttons -->
+        <input type="radio" name="radio-btn" id="Hradio1">
+        <input type="radio" name="radio-btn" id="Hradio2">
+        <!-- Fim Radios Buttons -->
+        <!-- Slide Images -->
+        <div class="slide first">
+          <div class="content">
+
+            <!--  CARD 1 -->
+
+            <div id="card01" class="content_cards card1">
+              <div class="card">
+                <h2 class="title_card">380 MEGA*</h2>
+                <p class="desc_opt">Com Wi-Fi e modem grátis</p>
+                <div class="line_card"></div>
+                <p class="desc_opt">Conteúdo digitais incluídos</p>
+                <div style="display:flex; flex-direction:row; align-items: center; justify-content: center;">
+                  <img class="icons" src="./assets/logo_hbo.png">
+                  <img class="icons" src="./assets/vero_crianca.png">
+                  <img class="icons" src="./assets/vero_seguranca.png">
+                  <img class="icons" src="./assets/vero_video.png">
+                </div>
+                <div>
+                  <div class="price">
+                    <div class="price_initial">
+                      <p class="desc_price_initial">de:</p>
+                      <p class="desc_price_initial">R$ 129,00</p>
+                    </div>
+                    <div class="price_final">
+                      <div class="price_final_simbols">
+                        <p class="por">por:</p>
+                        <p class="simbol_price">R$</p>
+                      </div>
+                      <p class="price_final">125,00</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="consulte_condicoes">Consulte condições</p>
+                <div class="botao" onclick="consultarWpp(10)">
+                  <a class="link10" href='' target="_blank">
+                    <p class="consulte_cobertura">Consultar cobertura</p>
+                  </a>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: row; align-items:center; justify-content:center;">
+                <p style="color:#ed3d75 ; font-size: 0.8rem;">
+                  Compartilhe essa oferta
+                </p>
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                  <a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://verointernetfibra.com.br/?utm_source=Product&amp;utm_medium=Facebook&amp;utm_campaign=Recommendation"
+                    alt="Facebook Icon">
+                    <img src="./assets/facebook.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="https://api.whatsapp.com/send?text=Vi essas ofertas da Vero e lembrei de você! https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DWhatsApp%26utm_campaign%3DRecommendation"
+                    class="whatsapp">
+                    <img src="./assets/whatsapp.svg"
+                      style="width: 1.4rem; height:1.4rem; margin-top: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="mailto:?&subject=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!&body=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!%20https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DEmail%26utm_campaign%3DRecommendation">
+                    <img src="./assets/email.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!--  CARD 2 -->
+
+            <div id="card01" class="content_cards card1">
+              <div class="card">
+                <h2 class="title_card">380 MEGA*</h2>
+                <p class="desc_opt">Com Wi-Fi e modem grátis</p>
+                <div class="line_card"></div>
+                <p class="desc_opt">Conteúdo digitais incluídos</p>
+                <div style="display:flex; flex-direction:row; align-items: center; justify-content: center;">
+                  <img class="icons" src="./assets/logo_hbo.png">
+                  <img class="icons" src="./assets/vero_crianca.png">
+                  <img class="icons" src="./assets/vero_seguranca.png">
+                  <img class="icons" src="./assets/vero_video.png">
+                </div>
+                <div>
+                  <div class="price">
+                    <div class="price_initial">
+                      <p class="desc_price_initial">de:</p>
+                      <p class="desc_price_initial">R$ 129,00</p>
+                    </div>
+                    <div class="price_final">
+                      <div class="price_final_simbols">
+                        <p class="por">por:</p>
+                        <p class="simbol_price">R$</p>
+                      </div>
+                      <p class="price_final">125,00</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="consulte_condicoes">Consulte condições</p>
+                <div class="botao" onclick="consultarWpp(10)">
+                  <a class="link10" href='' target="_blank">
+                    <p class="consulte_cobertura">Consultar cobertura</p>
+                  </a>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: row; align-items:center; justify-content:center;">
+                <p style="color:#ed3d75 ; font-size: 0.8rem;">
+                  Compartilhe essa oferta
+                </p>
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                  <a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://verointernetfibra.com.br/?utm_source=Product&amp;utm_medium=Facebook&amp;utm_campaign=Recommendation"
+                    alt="Facebook Icon">
+                    <img src="./assets/facebook.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="https://api.whatsapp.com/send?text=Vi essas ofertas da Vero e lembrei de você! https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DWhatsApp%26utm_campaign%3DRecommendation"
+                    class="whatsapp">
+                    <img src="./assets/whatsapp.svg"
+                      style="width: 1.4rem; height:1.4rem; margin-top: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="mailto:?&subject=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!&body=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!%20https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DEmail%26utm_campaign%3DRecommendation">
+                    <img src="./assets/email.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+            <!--  CARD 3 -->
+
+            <div id="card01" class="content_cards card1">
+              <div class="card">
+                <h2 class="title_card">380 MEGA*</h2>
+                <p class="desc_opt">Com Wi-Fi e modem grátis</p>
+                <div class="line_card"></div>
+                <p class="desc_opt">Conteúdo digitais incluídos</p>
+                <div style="display:flex; flex-direction:row; align-items: center; justify-content: center;">
+                  <img class="icons" src="./assets/logo_hbo.png">
+                  <img class="icons" src="./assets/vero_crianca.png">
+                  <img class="icons" src="./assets/vero_seguranca.png">
+                  <img class="icons" src="./assets/vero_video.png">
+                </div>
+                <div>
+                  <div class="price">
+                    <div class="price_initial">
+                      <p class="desc_price_initial">de:</p>
+                      <p class="desc_price_initial">R$ 129,00</p>
+                    </div>
+                    <div class="price_final">
+                      <div class="price_final_simbols">
+                        <p class="por">por:</p>
+                        <p class="simbol_price">R$</p>
+                      </div>
+                      <p class="price_final">125,00</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="consulte_condicoes">Consulte condições</p>
+                <div class="botao" onclick="consultarWpp(10)">
+                  <a class="link10" href='' target="_blank">
+                    <p class="consulte_cobertura">Consultar cobertura</p>
+                  </a>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: row; align-items:center; justify-content:center;">
+                <p style="color:#ed3d75 ; font-size: 0.8rem;">
+                  Compartilhe essa oferta
+                </p>
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                  <a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://verointernetfibra.com.br/?utm_source=Product&amp;utm_medium=Facebook&amp;utm_campaign=Recommendation"
+                    alt="Facebook Icon">
+                    <img src="./assets/facebook.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="https://api.whatsapp.com/send?text=Vi essas ofertas da Vero e lembrei de você! https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DWhatsApp%26utm_campaign%3DRecommendation"
+                    class="whatsapp">
+                    <img src="./assets/whatsapp.svg"
+                      style="width: 1.4rem; height:1.4rem; margin-top: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="mailto:?&subject=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!&body=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!%20https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DEmail%26utm_campaign%3DRecommendation">
+                    <img src="./assets/email.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="slide">
+
+          <div class="content">
+
+            <!--  CARD 1 -->
+
+            <div id="card01" class="content_cards card1">
+              <div class="card">
+                <h2 class="title_card">380 MEGA*</h2>
+                <p class="desc_opt">Com Wi-Fi e modem grátis</p>
+                <div class="line_card"></div>
+                <p class="desc_opt">Conteúdo digitais incluídos</p>
+                <div style="display:flex; flex-direction:row; align-items: center; justify-content: center;">
+                  <img class="icons" src="./assets/logo_hbo.png">
+                  <img class="icons" src="./assets/vero_crianca.png">
+                  <img class="icons" src="./assets/vero_seguranca.png">
+                  <img class="icons" src="./assets/vero_video.png">
+                </div>
+                <div>
+                  <div class="price">
+                    <div class="price_initial">
+                      <p class="desc_price_initial">de:</p>
+                      <p class="desc_price_initial">R$ 129,00</p>
+                    </div>
+                    <div class="price_final">
+                      <div class="price_final_simbols">
+                        <p class="por">por:</p>
+                        <p class="simbol_price">R$</p>
+                      </div>
+                      <p class="price_final">125,00</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="consulte_condicoes">Consulte condições</p>
+                <div class="botao" onclick="consultarWpp(10)">
+                  <a class="link10" href='' target="_blank">
+                    <p class="consulte_cobertura">Consultar cobertura</p>
+                  </a>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: row; align-items:center; justify-content:center;">
+                <p style="color:#ed3d75 ; font-size: 0.8rem;">
+                  Compartilhe essa oferta
+                </p>
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                  <a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://verointernetfibra.com.br/?utm_source=Product&amp;utm_medium=Facebook&amp;utm_campaign=Recommendation"
+                    alt="Facebook Icon">
+                    <img src="./assets/facebook.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="https://api.whatsapp.com/send?text=Vi essas ofertas da Vero e lembrei de você! https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DWhatsApp%26utm_campaign%3DRecommendation"
+                    class="whatsapp">
+                    <img src="./assets/whatsapp.svg"
+                      style="width: 1.4rem; height:1.4rem; margin-top: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="mailto:?&subject=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!&body=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!%20https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DEmail%26utm_campaign%3DRecommendation">
+                    <img src="./assets/email.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- Fim Slide Images -->
+      <!-- Navigation -->
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+      </div>
+      <!-- Fim Navigation -->
+
+      <div class="manual-navigation">
+        <label for="Hradio1" class="manual-btn"></label>
+        <label for="Hradio2" class="manual-btn"></label>
+
+      </div>
+
+    </div>
+
+
+     <!-- SLIDER INTERT + PREMIERE -->
+
+     <div class="slider" id="internetpremiere">
+
+      <div class="slides">
+        <!-- Radios Buttons -->
+        <input type="radio" name="radio-btn" id="Pradio1">
+
+        <!-- Fim Radios Buttons -->
+        <!-- Slide Images -->
+        <div class="slide first">
+          <div class="content">
+
+            <!--  CARD 1 -->
+
+            <div id="card01" class="content_cards card1">
+              <div class="card">
+                <h2 class="title_card">380 MEGA*</h2>
+                <p class="desc_opt">Com Wi-Fi e modem grátis</p>
+                <div class="line_card"></div>
+                <p class="desc_opt">Conteúdo digitais incluídos</p>
+                <div style="display:flex; flex-direction:row; align-items: center; justify-content: center;">
+                  <img class="icons" src="./assets/logo_hbo.png">
+                  <img class="icons" src="./assets/vero_crianca.png">
+                  <img class="icons" src="./assets/vero_seguranca.png">
+                  <img class="icons" src="./assets/vero_video.png">
+                </div>
+                <div>
+                  <div class="price">
+                    <div class="price_initial">
+                      <p class="desc_price_initial">de:</p>
+                      <p class="desc_price_initial">R$ 129,00</p>
+                    </div>
+                    <div class="price_final">
+                      <div class="price_final_simbols">
+                        <p class="por">por:</p>
+                        <p class="simbol_price">R$</p>
+                      </div>
+                      <p class="price_final">125,00</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="consulte_condicoes">Consulte condições</p>
+                <div class="botao" onclick="consultarWpp(10)">
+                  <a class="link10" href='' target="_blank">
+                    <p class="consulte_cobertura">Consultar cobertura</p>
+                  </a>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: row; align-items:center; justify-content:center;">
+                <p style="color:#ed3d75 ; font-size: 0.8rem;">
+                  Compartilhe essa oferta
+                </p>
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                  <a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://verointernetfibra.com.br/?utm_source=Product&amp;utm_medium=Facebook&amp;utm_campaign=Recommendation"
+                    alt="Facebook Icon">
+                    <img src="./assets/facebook.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="https://api.whatsapp.com/send?text=Vi essas ofertas da Vero e lembrei de você! https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DWhatsApp%26utm_campaign%3DRecommendation"
+                    class="whatsapp">
+                    <img src="./assets/whatsapp.svg"
+                      style="width: 1.4rem; height:1.4rem; margin-top: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="mailto:?&subject=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!&body=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!%20https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DEmail%26utm_campaign%3DRecommendation">
+                    <img src="./assets/email.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!--  CARD 2 -->
+
+            <div id="card01" class="content_cards card1">
+              <div class="card">
+                <h2 class="title_card">380 MEGA*</h2>
+                <p class="desc_opt">Com Wi-Fi e modem grátis</p>
+                <div class="line_card"></div>
+                <p class="desc_opt">Conteúdo digitais incluídos</p>
+                <div style="display:flex; flex-direction:row; align-items: center; justify-content: center;">
+                  <img class="icons" src="./assets/logo_hbo.png">
+                  <img class="icons" src="./assets/vero_crianca.png">
+                  <img class="icons" src="./assets/vero_seguranca.png">
+                  <img class="icons" src="./assets/vero_video.png">
+                </div>
+                <div>
+                  <div class="price">
+                    <div class="price_initial">
+                      <p class="desc_price_initial">de:</p>
+                      <p class="desc_price_initial">R$ 129,00</p>
+                    </div>
+                    <div class="price_final">
+                      <div class="price_final_simbols">
+                        <p class="por">por:</p>
+                        <p class="simbol_price">R$</p>
+                      </div>
+                      <p class="price_final">125,00</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="consulte_condicoes">Consulte condições</p>
+                <div class="botao" onclick="consultarWpp(10)">
+                  <a class="link10" href='' target="_blank">
+                    <p class="consulte_cobertura">Consultar cobertura</p>
+                  </a>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: row; align-items:center; justify-content:center;">
+                <p style="color:#ed3d75 ; font-size: 0.8rem;">
+                  Compartilhe essa oferta
+                </p>
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                  <a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://verointernetfibra.com.br/?utm_source=Product&amp;utm_medium=Facebook&amp;utm_campaign=Recommendation"
+                    alt="Facebook Icon">
+                    <img src="./assets/facebook.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="https://api.whatsapp.com/send?text=Vi essas ofertas da Vero e lembrei de você! https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DWhatsApp%26utm_campaign%3DRecommendation"
+                    class="whatsapp">
+                    <img src="./assets/whatsapp.svg"
+                      style="width: 1.4rem; height:1.4rem; margin-top: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="mailto:?&subject=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!&body=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!%20https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DEmail%26utm_campaign%3DRecommendation">
+                    <img src="./assets/email.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+            <!--  CARD 3 -->
+
+            <div id="card01" class="content_cards card1">
+              <div class="card">
+                <h2 class="title_card">380 MEGA*</h2>
+                <p class="desc_opt">Com Wi-Fi e modem grátis</p>
+                <div class="line_card"></div>
+                <p class="desc_opt">Conteúdo digitais incluídos</p>
+                <div style="display:flex; flex-direction:row; align-items: center; justify-content: center;">
+                  <img class="icons" src="./assets/logo_hbo.png">
+                  <img class="icons" src="./assets/vero_crianca.png">
+                  <img class="icons" src="./assets/vero_seguranca.png">
+                  <img class="icons" src="./assets/vero_video.png">
+                </div>
+                <div>
+                  <div class="price">
+                    <div class="price_initial">
+                      <p class="desc_price_initial">de:</p>
+                      <p class="desc_price_initial">R$ 129,00</p>
+                    </div>
+                    <div class="price_final">
+                      <div class="price_final_simbols">
+                        <p class="por">por:</p>
+                        <p class="simbol_price">R$</p>
+                      </div>
+                      <p class="price_final">125,00</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="consulte_condicoes">Consulte condições</p>
+                <div class="botao" onclick="consultarWpp(10)">
+                  <a class="link10" href='' target="_blank">
+                    <p class="consulte_cobertura">Consultar cobertura</p>
+                  </a>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: row; align-items:center; justify-content:center;">
+                <p style="color:#ed3d75 ; font-size: 0.8rem;">
+                  Compartilhe essa oferta
+                </p>
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                  <a target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://verointernetfibra.com.br/?utm_source=Product&amp;utm_medium=Facebook&amp;utm_campaign=Recommendation"
+                    alt="Facebook Icon">
+                    <img src="./assets/facebook.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="https://api.whatsapp.com/send?text=Vi essas ofertas da Vero e lembrei de você! https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DWhatsApp%26utm_campaign%3DRecommendation"
+                    class="whatsapp">
+                    <img src="./assets/whatsapp.svg"
+                      style="width: 1.4rem; height:1.4rem; margin-top: 0.6rem; cursor: pointer;">
+                  </a>
+                  <a target="_blank"
+                    href="mailto:?&subject=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!&body=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!%20https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DEmail%26utm_campaign%3DRecommendation">
+                    <img src="./assets/email.svg"
+                      style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- Fim Slide Images -->
+      <!-- Navigation -->
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+      </div>
+      <!-- Fim Navigation -->
+
+      <div class="manual-navigation">
+        <label for="Pradio1" class="manual-btn"></label>
+
+      </div>
+
+    </div>
+
+
+      <!-- SLIDER INTERT + TELECINE -->
+
+      <div class="slider" id="internettelecine">
+
+        <div class="slides">
+          <!-- Radios Buttons -->
+          <input type="radio" name="radio-btn" id="Tradio1">
+          <!-- Fim Radios Buttons -->
+          <!-- Slide Images -->
+          <div class="slide first">
+            <div class="content">
+  
+              <!--  CARD 1 -->
+  
+              <div id="card01" class="content_cards card1">
+                <div class="card">
+                  <h2 class="title_card">380 MEGA*</h2>
+                  <p class="desc_opt">Com Wi-Fi e modem grátis</p>
+                  <div class="line_card"></div>
+                  <p class="desc_opt">Conteúdo digitais incluídos</p>
+                  <div style="display:flex; flex-direction:row; align-items: center; justify-content: center;">
+                    <img class="icons" src="./assets/logo_hbo.png">
+                    <img class="icons" src="./assets/vero_crianca.png">
+                    <img class="icons" src="./assets/vero_seguranca.png">
+                    <img class="icons" src="./assets/vero_video.png">
+                  </div>
+                  <div>
+                    <div class="price">
+                      <div class="price_initial">
+                        <p class="desc_price_initial">de:</p>
+                        <p class="desc_price_initial">R$ 129,00</p>
+                      </div>
+                      <div class="price_final">
+                        <div class="price_final_simbols">
+                          <p class="por">por:</p>
+                          <p class="simbol_price">R$</p>
+                        </div>
+                        <p class="price_final">125,00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="consulte_condicoes">Consulte condições</p>
+                  <div class="botao" onclick="consultarWpp(10)">
+                    <a class="link10" href='' target="_blank">
+                      <p class="consulte_cobertura">Consultar cobertura</p>
+                    </a>
+                  </div>
+                </div>
+                <div style="display: flex; flex-direction: row; align-items:center; justify-content:center;">
+                  <p style="color:#ed3d75 ; font-size: 0.8rem;">
+                    Compartilhe essa oferta
+                  </p>
+                  <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                    <a target="_blank"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https://verointernetfibra.com.br/?utm_source=Product&amp;utm_medium=Facebook&amp;utm_campaign=Recommendation"
+                      alt="Facebook Icon">
+                      <img src="./assets/facebook.svg"
+                        style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                    </a>
+                    <a target="_blank"
+                      href="https://api.whatsapp.com/send?text=Vi essas ofertas da Vero e lembrei de você! https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DWhatsApp%26utm_campaign%3DRecommendation"
+                      class="whatsapp">
+                      <img src="./assets/whatsapp.svg"
+                        style="width: 1.4rem; height:1.4rem; margin-top: 0.6rem; cursor: pointer;">
+                    </a>
+                    <a target="_blank"
+                      href="mailto:?&subject=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!&body=Vi%20essas%20ofertas%20da%20Vero%20e%20lembrei%20de%20voc%C3%AA!%20https%3A%2F%2Fverointernetfibra.com.br%2F%3Futm_source%3DProduct%26utm_medium%3DEmail%26utm_campaign%3DRecommendation">
+                      <img src="./assets/email.svg"
+                        style="width: 1.4rem; height:1.4rem; margin: 0.6rem; cursor: pointer;">
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+        </div>
+        <!-- Fim Slide Images -->
+        <!-- Navigation -->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+        <!-- Fim Navigation -->
+  
+        <div class="manual-navigation">
+          <label for="Tradio1" class="manual-btn"></label>
+  
+        </div>
+  
+      </div>
+
+
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
